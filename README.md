@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages bosku
+Sunriset
+==========
 
-You can use the [editor on GitHub](https://github.com/omkz/gptest/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Solar Calculator
+==========
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This package generates **Solar Position Data** based on Latitude, Longitude, Date and Time Zone.  
+*Future updates will include elevation data.* 
 
-### Markdown
+The initial goal was to create a *simple* function that produced the daily sunrise and sunset for any given location. These calculations create a large amount of useful data that can be used for other solar related calculations and are based on the calculations from [NOAA (National Oceanic & Atmospheric Administration)](https://www.esrl.noaa.gov/gmd/grad/solcalc/).  The calculations can be used in various projects, including, but not limited to, Solar Panel Placement, Sun Exposure for Building Construction, Photography, and Circadian Rhythm-based IOT projects, and Timers. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Get It Now
+==========
 
-```markdown
-Syntax highlighted code block
+    $ pip install sunriset
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+Documentation
+=============
 
-1. Numbered
-2. List
+The built-in outputs include:
 
-**Bold** and _Italic_ and `Code` text
+Pandas DataFrame of all built-in calculations 
 
-[Link](url) and ![Image](src)
-```
+Daily Sunrise, Sunset & Solar Noon time - In Progress
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Solar Plots
 
-### Jekyll Themes
+Solar Window
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/omkz/gptest/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Sunrise and Sunset Location
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Requirements
+============
+
+datetime
+
+datetime - timedelta
+
+math
+
+pytz (still in progress)
+
+pandas
+
+Additional Requirements
+============ 
+Matplotlib 
+
+-----
+
+***Disclaimer Data for Litigation:***
+The sunriset Solar Calculator is for research and recreational use only. The authors cannot certify or authenticate sunrise, sunset or solar position data. We do not collect observations of astronomical data, and due to atmospheric conditions, our calculated results may vary significantly from actual observed values.
+
+For further information, please see the U.S. Naval Observatory's page Astronomical Data Used for Litigation.
